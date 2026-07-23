@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>UniSurvey</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  
+  <!-- WELCOME SCREEN -->
+  
+  <section id="welcomePage">
+    
+    <div class="welcomeCard">
+      
+      <span class="version">Version 1.0</span>
+      
+      <h1>🎓 UniSurvey</h1>
+      
+      <h2>
+        
+        Intelligent Student Data Collection
+        
+        <br>
+        
+        & Analysis System
+        
+      </h2>
+      
+      <div class="developer">
+        
+        <h3>Developed By</h3>
+        
+        <h2 class="myName">
+          
+          Anele Chinoye David
+          
+        </h2>
+        
+        <p>
+          
+          Year One Student
+          
+          <br>
+          
+          Department of Public Administration
+          
+          <br>
+          
+          University of Port Harcourt
+          
+        </p>
+        
+      </div>
+      
+      <div class="course">
+        
+        <strong>Computer and Its Application</strong>
+        
+        <p>
+          
+          Assignment Project
+          
+        </p>
+        
+      </div>
+      
+      <p class="intro">
+        
+        Welcome to UniSurvey.
+        
+        This application demonstrates how Information and Communication Technology (ICT) tools can be used to collect both quantitative and qualitative data.
+        
+        The information you provide will be processed instantly to generate personalized feedback based on your responses.
+        
+        Your responses are processed only on your device and are not permanently stored.
+        
+      </p>
+      
+      <button id="launchBtn">
+      
+        🚀 Launch UniSurvey
+        
+      </button>
+      
+    </div>
+    
+  </section>
+  
+  <!-- LOADING SCREEN -->
+  
+  <section id="loadingScreen">
+    
+    <div class="loaderBox">
+      
+      <h2>
+        
+        Initializing UniSurvey...
+        
+      </h2>
+      
+      <div class="loader">
+        
+        <div class="progress"></div>
+        
+      </div>
+      
+      <p>
+        
+        Preparing Intelligent Student Analysis System...
+        
+      </p>
+      
+    </div>
+    
+  </section>
+  
+  <!-- SURVEY PAGE -->
+  
+  <section id="surveyPage">
+    
+    <div class="surveyCard">
+  
+  <h1>Step 1 of 5</h1>
+  
+  <div class="progressBar">
+    <div class="progressFill" style="width:20%;"></div>
+  </div>
+  
+  <h2>SECTION A</h2>
+  <h3>Personal Information</h3>
+  
+  <label>Full Name</label>
+  <input type="text" id="fullname" placeholder="Enter your full name">
+  
+  <label>Registration Number</label>
+  <input type="text" id="regno" placeholder="Enter your registration number">
+  
+  <label>Department</label>
+  <input type="text" id="department" placeholder="Enter your department">
+  
+  <label>Faculty</label>
+  <input type="text" id="faculty" placeholder="Enter your faculty">
+  
+  <label>Level</label>
+  <select id="level">
+    <option>Select Level</option>
+    <option>100 Level</option>
+    <option>200 Level</option>
+    <option>300 Level</option>
+    <option>400 Level</option>
+    <option>500 Level</option>
+  </select>
+  
+  <label>Age</label>
+  <input type="number" id="age">
+  
+  <label>Gender</label>
+  <select id="gender">
+    <option>Select Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+  
+  <button type="button" id="nextBtn">
+  Next →
+</button>
+  
+</div>
+    
+  </section>
+  
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

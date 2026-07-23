@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f4c81,#1b6ca8,#4fa3d1);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+#welcomePage{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.welcomeCard{
+    width:100%;
+    max-width:700px;
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+    animation:fadeIn 1s ease;
+}
+
+.version{
+    background:#0f4c81;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+h1{
+    margin-top:20px;
+    color:#0f4c81;
+    font-size:42px;
+}
+
+h2{
+    margin-top:10px;
+    color:#222;
+}
+
+.developer{
+    margin-top:30px;
+    background:#f5f9ff;
+    padding:20px;
+    border-radius:15px;
+}
+
+.myName{
+    color:#0f4c81;
+    margin:10px 0;
+}
+
+.course{
+    margin-top:25px;
+    background:#0f4c81;
+    color:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+.intro{
+    margin-top:25px;
+    line-height:1.8;
+    color:#444;
+}
+
+button{
+    margin-top:35px;
+    padding:16px 35px;
+    border:none;
+    border-radius:50px;
+    background:#0f4c81;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#08345c;
+    transform:scale(1.05);
+}
+
+#loadingScreen{
+    display:none;
+    text-align:center;
+    color:white;
+}
+
+.loader{
+    width:320px;
+    height:18px;
+    background:white;
+    border-radius:50px;
+    margin:25px auto;
+    overflow:hidden;
+}
+
+.progress{
+    width:0%;
+    height:100%;
+    background:#00ff99;
+}
+
+#surveyPage{
+    display:none;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.surveyCard {
+    background: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .15);
+}
+
+.surveyCard h1 {
+    color: #0f4c81;
+    text-align: center;
+}
+
+.surveyCard h2,
+.surveyCard h3 {
+    margin-top: 15px;
+}
+
+.surveyCard label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.surveyCard input,
+.surveyCard select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.progressBar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: #0f4c81;
+}
+.resultCard {
+    
+    max-width: 750px;
+    
+    margin: 40px auto;
+    
+    background: white;
+    
+    padding: 30px;
+    
+    border-radius: 20px;
+    
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .15);
+    
+}
+
+.subtitle {
+    
+    text-align: center;
+    
+    color: #777;
+    
+    margin-bottom: 20px;
+    
+}
+
+.scoreCircle {
+    
+    width: 150px;
+    
+    height: 150px;
+    
+    margin: 20px auto;
+    
+    border-radius: 50%;
+    
+    background: #0f4c81;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    font-size: 35px;
+    
+    font-weight: bold;
+    
+    color: white;
+    
+}
+
+.skills {
+    
+    margin-top: 35px;
+    
+}
+
+.bar {
+    
+    width: 100%;
+    
+    height: 15px;
+    
+    background: #ddd;
+    
+    border-radius: 50px;
+    
+    margin-bottom: 25px;
+    
+    overflow: hidden;
+    
+}
+
+.fill {
+    
+    height: 100%;
+    
+    width: 0%;
+    
+    background: #0f4c81;
+    
+    transition: 2s;
+    
+    border-radius: 50px;
+    
+}
+
+.infoCard {
+    
+    background: #f8f8f8;
+    
+    padding: 15px;
+    
+    margin-top: 20px;
+    
+    border-radius: 15px;
+    
+}
+.footer {
+    
+    margin-top: 60px;
+    
+    text-align: center;
+    
+    padding: 30px;
+    
+    font-size: 14px;
+    
+    color: #777;
+    
+}
+
+.footer hr {
+    
+    margin-bottom: 20px;
+    
+    border: none;
+    
+    height: 1px;
+    
+    background: #ddd;
+    
+}
+
+.footer b {
+    
+    color: #0f4c81;
+    
+    font-size: 16px;
+    
+}
+.badgeCard {
+    
+    margin: 25px 0;
+    
+    padding: 20px;
+    
+    border-radius: 15px;
+    
+    background: #eaf4ff;
+    
+    text-align: center;
+    
+    font-size: 24px;
+    
+    font-weight: bold;
+    
+    color: #0f4c81;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    
+}
+.chartCard {
+    
+    background: white;
+    
+    margin-top: 30px;
+    
+    padding: 20px;
+    
+    border-radius: 20px;
+    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+    
+    text-align: center;
+    
+}
+
+#studentChart {
+    
+    max-width: 350px;
+    
+    margin: auto;
+    
+}
