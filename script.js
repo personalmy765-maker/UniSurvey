@@ -70,7 +70,15 @@ window.onload = function() {
       
     }
     
-    alert("Personal Information Completed Successfully!");
+    localStorage.setItem("fullname", fullname);
+localStorage.setItem("regno", regno);
+localStorage.setItem("department", department);
+localStorage.setItem("faculty", faculty);
+localStorage.setItem("level", level);
+localStorage.setItem("age", age);
+localStorage.setItem("gender", gender);
+
+window.location.href = "survey.html";
     
   });
   
