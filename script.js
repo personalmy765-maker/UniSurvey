@@ -73,7 +73,15 @@ window.location.href = "survey.html";
       
     }
     
-    document.body.style.background = "red";
+    localStorage.setItem("fullname", fullname);
+localStorage.setItem("regno", regno);
+localStorage.setItem("department", department);
+localStorage.setItem("faculty", faculty);
+localStorage.setItem("level", level);
+localStorage.setItem("age", age);
+localStorage.setItem("gender", gender);
+
+window.location.href = "survey.html";
     
   });
   
@@ -205,13 +213,7 @@ let counter = setInterval(function() {
   }
   
 }, 20);
-  document.getElementById("studyBar").style.width = percentage + "%";
-
-document.getElementById("ictBar").style.width = (percentage - 5) + "%";
-
-document.getElementById("leaderBar").style.width = (percentage - 12) + "%";
-
-document.getElementById("careerBar").style.width = (percentage - 3) + "%";
+  
 
 document.getElementById("badge").innerHTML = badge;
   
